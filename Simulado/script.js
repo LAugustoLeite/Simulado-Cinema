@@ -1,11 +1,14 @@
-var btn = document.querySelector('#id-sinopse');
-var container = document.querySelector('.btn-sinopse');
+var btn = document.getElementById('action-btn');
+var container = document.querySelector('container');
 
-function sinopse(){
-    if(container.style.display === 'block'){
-        container.style.display = 'none';
+btn.addEventListener("click", function(){
+
+    var container = document.getElementById("container");
+
+    if(container.style.display ==="none"){
+        container.style.display = "inline-block";
+    } else{
+        container.style.display = "none";
     }
-    else{
-        container.style.display = 'block';
-    }
-}
+
+});

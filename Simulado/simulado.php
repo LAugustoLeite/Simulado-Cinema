@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<head>
+    <script src="./script.js" defer></script>
+</head>
 <html>
 <head>
     <title>Tela Principal</title>
@@ -21,7 +24,7 @@
         .main{
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: start;
         }
         .movie-card {
             width: 200px;
@@ -50,13 +53,13 @@
             background-color: #941f1f;
             color: #fff;
         }
-        btn-sinopse{
-            display: none;
-            visibility: hidden;
+        #container{
+            display: inline-block;
+            transition: ease-in-out 1s;
+            width: auto;
+            height: auto;
         }
-        .movie-card div{
-            display: none;
-        }
+
     </style>
 </head>
 <body>
@@ -70,8 +73,8 @@
                 <img src="./img/orfa.jpg" alt="Filme 1">
                 <h3>A Orfã 2</h3>
                 <a href=""><h3 class="btn-compra">Comprar</h3></a>
-                <button onclick="sinopse" id="id-sinopse"><h3>Sinopse</h3></button>
-                <div class="btn-sinopse">Esther consegue escapar de um centro psiquiátrico onde está confinada e viaja para os Estados Unidos se passando por filha desaparecida de uma família rica. No entanto, uma mãe superprotetora fará de tudo por sua família, não importando os meios.</div>
+                <button id="action-btn"><h3>Sinopse</h3></button>
+                <div id="container">Esther consegue escapar de um centro psiquiátrico onde está confinada e viaja para os Estados Unidos se passando por filha desaparecida de uma família rica. No entanto, uma mãe superprotetora fará de tudo por sua família, não importando os meios.</div>
             </div>
             <div class="movie-card">
                 <img src="./img/naosepreocupe.jpg" alt="Filme 2">
